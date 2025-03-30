@@ -1,3 +1,6 @@
+#define KRYPTO_MAIN 0
+#include "krypto.cpp"
+
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
 
@@ -7,7 +10,7 @@ namespace {
 
 TEST(KryptoTest, TODO)
 {
-    EXPECT_EQ(0, 1);
+    EXPECT_EQ(krypto::f(), 43);
 }
 
 }
